@@ -1,0 +1,13 @@
+<div id="content">
+<% err %>
+<% IF stats.size %>
+  <% FOREACH id IN stats.keys.nsort %>
+    URL: <% stats.$id.url %> Count: <% stats.$id.count %><br>
+  <% END %>
+<% ELSE %>
+  <em>Unbelievable.  No entries here so far</em>
+<% END %>
+<% prev1 %>
+<% next1 %>
+<% msg %>
+</div>
